@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block main %}
+
+<div class="profile">
+    <div id="profile-picture" class="profile-picture">
+        <img src="/static/img/{{ portfolio_data.name.lower() }}.jpg" />
+
+    </div>
+    <h1>{{ portfolio_data.name }}</h1>
+</div>
+
+<div>
+  <div class="about-me">
+    {{ portfolio_data.aboutMe }}
+  </div>
+  <div class="experiences">
+    <ul>
+      {% for exp in portfolio_data.experiences %}
+      <li>{{exp.title}}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="hobbies">
+
+  </div>
+</div>
+
+{% endblock %}

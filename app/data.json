@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Bosco",
+    "aboutMe": "Hello! I am Bosco, an aspiring, self-motivated software developer who has a strong interest in building scalable software that has positive impact on society and the environment.",
+    "experiences": [
+      {
+        "title": "Software Engineering Fellow (Jupyterlab)",
+        "duration": "May 2022 - Aug 2022",
+        "company": "MLH Fellowship",
+        "descriptions": "Implemented new features in the Git extension on Jupyterlab, such as multiple file selection, multiple remote repo support and commit graph visualization"
+      }
+    ],
+    "hobbies": [
+      {
+        "name": "piano",
+        "description": "I love playing piano"
+      }
+    ],
+    "education": [
+      {
+        "school": "British Columbia Institute of Technology",
+        "qualification": "Diploma in Computer Systems Technology",
+        "duration": "2021-2023"
+      }
+    ],
+    "countries": ["Hong Kong", "Canada", "United States", "Australia", "Taiwan", "Singapore", "Malaysia", "Vietnam", "Cambodia", "Thailand", "China", "Japan", "Korea"]
+  }
+]
