@@ -27,7 +27,7 @@
   },
   {
     "name": "Sarah",
-    "aboutMe": "Hello! I'm Sarah! I'm a former veteran teacher, a career changer, and a Latina in tech. I have a passion for front end development, UI/UX design, and accessibility",
+    "aboutMe": "Hello! I'm Sarah! I'm a former veteran teacher, a career changer, and a Latina in tech. I have a passion for front end development, UI/UX design, and accessibility.",
     "experiences": [
       {
         "title": "Site Reliability Engineering Fellow",
@@ -49,6 +49,6 @@
         "duration": "2016-2017"
       }
     ],
-    "countries": ["United States"]
+    "countries": ["United States", "United Kingdom", "Mexico"]
   }
 ]
