@@ -1,12 +1,13 @@
 {% extends "base.html" %}
 {% block main %}
 
-<div class="profile">
-  <div id="profile-picture" class="profile-picture">
-    <img src="/static/img/{{ portfolio_data.name.lower() }}.jpg" />
-
+<div class="container-fluid profile-hero">
+  <div class="container profile-picture">
+    <a href="/profile/{{portfolio_data.name.lower()}}">
+      <img src="/static/img/{{portfolio_data.name.lower()}}.jpg" />
+    </a>
   </div>
-  <h1>{{ portfolio_data.name }}</h1>
+  <h1 class="text-center text-white">{{ portfolio_data.name }}</h1>
 </div>
 
 <div>
@@ -36,7 +37,7 @@
 
       </div>
       <div class="map=wrapper">
-        
+
       </div>
     </div>
   </div>

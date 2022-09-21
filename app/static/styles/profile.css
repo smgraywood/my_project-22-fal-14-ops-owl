@@ -1,0 +1,11 @@
+.profile-hero {
+  background-color: #1d539f;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.profile-picture img {
+  border-radius: 50% !important;
+  max-width: 30%;     
+  padding: 20px;
+}

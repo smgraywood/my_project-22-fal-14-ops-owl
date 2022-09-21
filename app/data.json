@@ -24,5 +24,11 @@
       }
     ],
     "countries": ["Hong Kong", "Canada", "United States", "Australia", "Taiwan", "Singapore", "Malaysia", "Vietnam", "Cambodia", "Thailand", "China", "Japan", "Korea"]
+  },
+  {
+    "name": "James"
+  },
+  {
+    "name": "Sarah"
   }
 ]

@@ -1,13 +1,19 @@
 {% extends "base.html" %}
 {% block main %}
 
-<div class="profile">
-    <div id="profile-picture" class="profile-picture">
-        {% for name in names %}
-        <a href="/profile/{{name}}"> <img src="/static/img/{{name}}.jpg" /> </a>
-        {% endfor %}
+<div class="container-fluid landing-hero">
+    <div id="profile-pictures" class="container profile-pictures">
+        <div class="row">
+            {% for name in names %}
+            <div class="col">
+                <a href="/profile/{{name}}">
+                    <img src="/static/img/{{name}}.jpg" />
+                </a>
+            </div>
+            {% endfor %}
+        </div>
     </div>
-    <h1>{{ title }}</h1>
+    <h1 class="text-center text-white">{{ title }}</h1>
 </div>
 
 {% endblock %}
