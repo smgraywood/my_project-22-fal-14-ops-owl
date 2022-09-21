@@ -10,34 +10,39 @@
   <h1 class="text-center text-white">{{ portfolio_data.name }}</h1>
 </div>
 
-<div>
-  <div class="profile-wrapper">
-
-    <div class="flex-left">
-      <div class="about-me">
-        {{ portfolio_data.aboutMe }}
+<div class="profile-wrapper container-xxl m-2">
+  <div class="row">
+    <div class="col">
+      <div class="about-me m-2">
+        <h4>About Me</h4>
+        <p>
+          {{ portfolio_data.aboutMe }}
+        </p>
       </div>
-      <div class="experiences">
+      <div class="experiences m-2">
+        <h4>Experiences</h4>
         <ul>
           {% for exp in portfolio_data.experiences %}
           <li>{{exp.title}}</li>
           {% endfor %}
         </ul>
       </div>
-
-      <div class="hobbies">
-
+      <div class="projects m-2">
+        <h4>Projects</h4>
       </div>
+
     </div>
-    <div class="flex-right">
-      <div class="projects">
+    <div class="col">
+
+      <div class="education m-2">
+        <h4>Education</h4>
+      </div>
+      <div class="hobbies m-2">
+        <h4>Hobbies</h4>
 
       </div>
-      <div class="education">
-
-      </div>
-      <div class="map=wrapper">
-
+      <div class="map-wrapper m-2">
+        <h4>Countries I've visited</h4>
       </div>
     </div>
   </div>
