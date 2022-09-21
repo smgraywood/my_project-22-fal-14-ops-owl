@@ -3,8 +3,9 @@
 
 <div class="profile">
     <div id="profile-picture" class="profile-picture">
-        <a href="/people/bosco"> <img src="./static/img/logo.jpg" /> </a>
-
+        {% for name in names %}
+        <a href="/profile/{{name}}"> <img src="/static/img/{{name}}.jpg" /> </a>
+        {% endfor %}
     </div>
     <h1>{{ title }}</h1>
 </div>
