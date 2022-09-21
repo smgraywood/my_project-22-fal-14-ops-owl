@@ -1,29 +1,58 @@
 {% extends "base.html" %}
 {% block main %}
+<script type="module" src="/static/scripts/index.js"></script>
 
-<div class="profile">
-    <div id="profile-picture" class="profile-picture">
-        <img src="/static/img/{{ portfolio_data.name.lower() }}.jpg" />
+<div class="container-fluid profile-hero">
+  <div class="container profile-picture">
+    <a href="/profile/{{portfolio_data.name.lower()}}">
+      <img src="/static/img/{{portfolio_data.name.lower()}}.jpg" />
+    </a>
+  </div>
+  <h1 class="text-center text-white">{{ portfolio_data.name }}</h1>
+</div>
+
+<div class="profile-wrapper container-xxl m-2">
+  <div class="row">
+    <div class="col">
+      <div class="about-me m-2">
+        <h4>About Me</h4>
+        <p>
+          {{ portfolio_data.aboutMe }}
+        </p>
+      </div>
+      <div class="experiences m-2">
+        <h4>Experiences</h4>
+        <ul>
+          {% for exp in portfolio_data.experiences %}
+          <li>{{exp.title}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="projects m-2">
+        <h4>Projects</h4>
+      </div>
 
     </div>
-    <h1>{{ portfolio_data.name }}</h1>
+    <div class="col">
+
+      <div class="education m-2">
+        <h4>Education</h4>
+      </div>
+      <div class="hobbies m-2">
+        <h4>Hobbies</h4>
+
+      </div>
+      <div class="map-wrapper m-2">
+        <h4>Countries I've visited</h4>
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
-<div>
-  <div class="about-me">
-    {{ portfolio_data.aboutMe }}
-  </div>
-  <div class="experiences">
-    <ul>
-      {% for exp in portfolio_data.experiences %}
-      <li>{{exp.title}}</li>
-      {% endfor %}
-    </ul>
-  </div>
-
-  <div class="hobbies">
-
-  </div>
-</div>
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+  defer></script>
 
 {% endblock %}
