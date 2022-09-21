@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block main %}
+<script type="module" src="/static/scripts/index.js"></script>
 
 <div class="container-fluid profile-hero">
   <div class="container profile-picture">
@@ -43,10 +44,15 @@
       </div>
       <div class="map-wrapper m-2">
         <h4>Countries I've visited</h4>
+        <div id="map"></div>
       </div>
     </div>
   </div>
 
 </div>
+
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+  defer></script>
 
 {% endblock %}
