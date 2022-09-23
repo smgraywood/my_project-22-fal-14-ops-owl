@@ -17,7 +17,9 @@
       <!-- about me  -->
       <div class="card about-me m-2 mb-4">
         <div class="card-body">
-          <h4 class="card-title">About Me</h4>
+          <h4 class="card-title d-flex align-items-center gap-2">
+            <div> About Me </div><img style="width: 25px;" src="/static/img/icons/info.png">
+          </h4>
           <p class="card-text">{{ portfolio_data.aboutMe }}</p>
         </div>
       </div>
@@ -26,7 +28,15 @@
       <div class="card experiences m-2 mb-4">
         <div class="card-body">
           <h4 class="card-title">Experiences</h4>
-          <p class="card-text">{{ portfolio_data.aboutMe }}</p>
+          <div class="experience-items-wrapper">
+            {% for experience in portfolio_data.experiences %}
+            <div class="experience-item mb-2">
+              <div class="exp-title fw-bolder"> {{ experience.title }} </div>
+              <div class="exp-company text-muted"> {{ experience.company }} | {{ experience.duration }} </div>
+              <div class="exp-desc">{{ experience.descriptions }}</div>
+            </div>
+            {% endfor %}
+          </div>
         </div>
       </div>
 
@@ -43,27 +53,58 @@
 
       <div class="card education m-2 mb-4">
         <div class="card-body">
-          <h4 class="card-title">Education</h4>
-          <p class="card-text">This is some text within a card body.</p>
+          <h4 class="card-title">Education <img style="width: 35px;" src="/static/img/icons/education-cap.svg"></h4>
+
+          <div class="education-items-wrapper">
+            {% for education in portfolio_data.educations %}
+            <div class="education-item mb-2">
+              <div class="exp-title fw-bolder"> {{ education.qualification }} </div>
+              <div class="exp-company text-muted"> {{ education.school }} | {{ education.duration }} </div>
+            </div>
+            {% endfor %}
+          </div>
+
         </div>
       </div>
       <div class="card hobbies m-2 mb-4">
         <div class="card-body">
           <h4 class="card-title">Hobbies</h4>
-          <p class="card-text">This is some text within a card body.</p>
+
+          <div class="hobby-items-wrapper">
+            {% for hobby in portfolio_data.hobbies %}
+            <div class="hobby-item d-flex">
+              <div class="hobby-img">
+                <img style="width: 5rem" src="{{ hobby.img }}" alt="{{ hobby.name }}" >
+              </div>
+              <div class="hobby-info">
+                <div class="hobby-name">
+                  {{ hobby.name | capitalize }}
+                </div>
+                <div class="hobby-desc">
+                  {{ hobby.description }}
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+
+
         </div>
       </div>
-
-      <div class="card map-wrapper m-2 mb-4">
-        <div class="card-body">
-          <h4 class="card-title">Countries I've Visited</h4>
-          <div id="countryData" data-countries='{{ portfolio_data.countries|tojson }}'></div>
-          <div id="map"></div>
-        </div>
-      </div>
-
     </div>
+
+    <div class="card map-wrapper m-2 mb-4">
+      <div class="card-body">
+        <h4 class="card-title">Countries I've Visited</h4>
+        <h6 class="card-subtitle mb-2 mt-2 text-muted">{{ portfolio_data.countries|join(' | ', attribute='name') }}
+        </h6>
+        <div id="countryData" data-countries='{{ portfolio_data.countries|tojson }}'></div>
+        <div id="map"></div>
+      </div>
+    </div>
+
   </div>
+</div>
 
 </div>
 

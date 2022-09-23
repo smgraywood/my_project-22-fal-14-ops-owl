@@ -1,26 +1,49 @@
 [
   {
     "name": "Bosco",
-    "aboutMe": "Hello! I am Bosco, an aspiring, self-motivated software developer who has a strong interest in building scalable software that has positive impact on society and the environment.",
+    "aboutMe": "Hello! I am Bosco, an aspiring, self-motivated software engineer who has a strong interest in building scalable software that has positive impact on society and the environment.",
     "experiences": [
       {
         "title": "Software Engineering Fellow (Jupyterlab)",
         "duration": "May 2022 - Aug 2022",
         "company": "MLH Fellowship",
         "descriptions": "Implemented new features in the Git extension on Jupyterlab, such as multiple file selection, multiple remote repo support and commit graph visualization"
+      },
+      {
+        "title": "Full Stack Developer",
+        "duration": "Dec 2021 - Jun 2022",
+        "company": "Be Ultimate",
+        "descriptions": "Built a backend framework to automate work processes using Google App Script which integrates Shopify and Hubspot services through REST API and GraphQL"
+      },
+      {
+        "title": "DevOps Intern",
+        "duration": "Jun 2021 - Jan 2022",
+        "company": "Storius",
+        "descriptions": "Extended backend API functionalities, Developed story pop-ups on React front-end, Deployed backend updates in AWS EC2"
       }
     ],
     "hobbies": [
       {
         "name": "piano",
-        "description": "I love playing piano!"
+        "description": "I love playing piano! My favourite composers are Mozart, Back, Tchaikovsky and Beethoven. I also play anime songs.",
+        "img": "/static/img/bosco/piano.jpg"
+      },
+      {
+        "name": "badminton",
+        "description": "It's a fun sport!",
+        "img": "/static/img/bosco/badminton.jpeg"
       }
     ],
-    "education": [
+    "educations": [
       {
         "school": "British Columbia Institute of Technology",
         "qualification": "Diploma in Computer Systems Technology",
         "duration": "2021-2023"
+      },
+      {
+        "school": "The Chinese University of Hong Kong",
+        "qualification": "BSSc Psychology",
+        "duration": "2014-2019"
       }
     ],
     "countries": [
@@ -97,7 +120,7 @@
         "description": "I care for over 100 cacti and succulents!"
       }
     ],
-    "education": [
+    "educations": [
       {
         "school": "The University of Chicago",
         "qualification": "MA Social Sciences",
