@@ -65,9 +65,9 @@
 
           <div class="hobby-items-wrapper">
             {% for hobby in portfolio_data.hobbies %}
-            <div class="hobby-item d-flex">
+            <div class="hobby-item d-flex flex-column">
               <div class="hobby-img">
-                <img style="width: 5rem" src="{{ hobby.img }}" alt="{{ hobby.name }}" >
+                <img src="{{ hobby.img }}" alt="{{ hobby.name }}" >
               </div>
               <div class="hobby-info">
                 <div class="hobby-name">
@@ -78,6 +78,7 @@
                 </div>
               </div>
             </div>
+            <hr/>
             {% endfor %}
           </div>
 

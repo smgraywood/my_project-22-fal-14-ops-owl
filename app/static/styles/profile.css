@@ -26,14 +26,22 @@
   font-family: 'Bungee', cursive;
 }
 
-.card-text{
-  font-family: 'Roboto Condensed', sans-serif;
-}
+
 .hobby-img{
   margin-right: 5px;
   margin-top: 5px;
+  width: 100%;
+}
+.hobby-img img {
+  border-radius: 2rem;
+  width: min(80%, 20rem);
+  margin-bottom: 1rem;
 }
 
 .hobby-name{
   font-weight: bold;
+}
+
+hr:last-child {
+  display: none;
 }

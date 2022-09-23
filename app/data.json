@@ -3,7 +3,7 @@
     "name": "Bosco",
     "linked_in": "https://www.linkedin.com/in/boscochw/",
     "github": "https://github.com/BoscoCHW/",
-    "aboutMe": "Hello! I am Bosco, an aspiring, self-motivated software engineer who has a strong interest in building scalable software that has positive impact on society and the environment.",
+    "aboutMe": "Hello! I am Bosco, an aspiring, self-motivated software engineer who has a strong interest in building scalable software that has positive impact on society and the environment. I like studying mathematics and data structures because they allow us to conceptualize problems in ways that make solving them funner and easier.",
     "experiences": [
       {
         "title": "Software Engineering Fellow (Jupyterlab)",
@@ -29,11 +29,6 @@
         "name": "piano",
         "description": "I love playing piano! My favourite composers are Mozart, Back, Tchaikovsky and Beethoven. I also play anime songs.",
         "img": "/static/img/bosco/piano.jpg"
-      },
-      {
-        "name": "badminton",
-        "description": "It's a fun sport!",
-        "img": "/static/img/bosco/badminton.jpeg"
       }
     ],
     "educations": [
