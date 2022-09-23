@@ -12,45 +12,56 @@
 </div>
 
 <div class="profile-wrapper container-xxl m-2">
-  <div class="row">
+  <div id="profile-row" class="row">
     <div class="col">
-      <div class="about-me m-2">
-        <h4>About Me</h4>
-        <p>
-          {{ portfolio_data.aboutMe }}
-        </p>
+      <!-- about me  -->
+      <div class="card about-me m-2 mb-4">
+        <div class="card-body">
+          <h4 class="card-title">About Me</h4>
+          <p class="card-text">{{ portfolio_data.aboutMe }}</p>
+        </div>
       </div>
-      <div class="experiences m-2">
-        <h4>Experiences</h4>
-        <ul>
-          {% for exp in portfolio_data.experiences %}
-          <li>{{exp.title}}</li>
-          {% endfor %}
-        </ul>
+
+      <!-- experiences -->
+      <div class="card experiences m-2 mb-4">
+        <div class="card-body">
+          <h4 class="card-title">Experiences</h4>
+          <p class="card-text">{{ portfolio_data.aboutMe }}</p>
+        </div>
       </div>
-      <div class="projects m-2">
-        <h4>Projects</h4>
+
+      <!-- projects -->
+      <div class="card projects m-2 mb-4">
+        <div class="card-body">
+          <h4 class="card-title">Projects</h4>
+          <p class="card-text">{{ portfolio_data.aboutMe }}</p>
+        </div>
       </div>
 
     </div>
     <div class="col">
 
-      <div class="education m-2">
-        <h4>Education</h4>
+      <div class="card education m-2 mb-4">
+        <div class="card-body">
+          <h4 class="card-title">Education</h4>
+          <p class="card-text">This is some text within a card body.</p>
+        </div>
       </div>
-      <div class="hobbies m-2">
-        <h4>Hobbies</h4>
-
+      <div class="card hobbies m-2 mb-4">
+        <div class="card-body">
+          <h4 class="card-title">Hobbies</h4>
+          <p class="card-text">This is some text within a card body.</p>
+        </div>
       </div>
-      <div class="map-wrapper m-2">
 
-        <h4>Countries I've Visited</h4>
-        <div id="countryData" data-countries='{{ portfolio_data.countries|tojson }}'></div>
-        <div id="map"></div>
-
-
-
+      <div class="card map-wrapper m-2 mb-4">
+        <div class="card-body">
+          <h4 class="card-title">Countries I've Visited</h4>
+          <div id="countryData" data-countries='{{ portfolio_data.countries|tojson }}'></div>
+          <div id="map"></div>
+        </div>
       </div>
+
     </div>
   </div>
 

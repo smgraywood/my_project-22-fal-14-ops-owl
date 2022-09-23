@@ -13,7 +13,7 @@
     "hobbies": [
       {
         "name": "piano",
-        "description": "I love playing piano"
+        "description": "I love playing piano!"
       }
     ],
     "education": [
@@ -104,6 +104,18 @@
         "duration": "2016-2017"
       }
     ],
-    "countries": ["United States", "United Kingdom", "Mexico"]
+    "countries": [
+      {
+        "name": "United States",
+        "lat": 37.09024,
+        "long": -95.712891
+      },
+      {
+        "name": "United Kingdom",
+        "lat": 55.378051,
+        "long": -3.435973
+      },
+      { "name": "Mexico", "lat": 23.634501, "long": -102.552784 }
+    ]
   }
 ]

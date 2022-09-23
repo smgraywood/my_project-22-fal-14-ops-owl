@@ -5,7 +5,9 @@ script.src =
 script.async = true;
 
 let map;
-const countries = JSON.parse(document.getElementById("countryData").dataset.countries);
+const countries = JSON.parse(
+  document.getElementById("countryData").dataset.countries
+);
 
 window.initMap = function () {
   map = new google.maps.Map(document.getElementById("map"), {
@@ -21,7 +23,14 @@ window.initMap = function () {
   }
 };
 
-
-console.log(countries);
 // Append the 'script' element to 'head'
 document.head.appendChild(script);
+
+const profileRow = document.querySelector("#profile-row");
+window.addEventListener("resize", (e) => {
+  if (window.innerWidth < 700) {
+    profileRow.classList.remove("row");
+  } else {
+    profileRow.className = "row";
+  }
+});
