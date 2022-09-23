@@ -36,6 +36,7 @@
 
 .text-white{
     font-family: 'Roboto Condensed', sans-serif;
+    font-size: 50px;
 }
 
 .team-name{
@@ -46,4 +47,12 @@
 
 .owl-logo{
     width: 500px;
+    margin-bottom: -120px;
+}
+
+@media only screen and (max-width: 800px) {
+    .owl-logo{
+        width: 500px;
+        margin-bottom: 10px;
+    }
 }

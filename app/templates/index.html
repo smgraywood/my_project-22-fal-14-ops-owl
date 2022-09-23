@@ -2,6 +2,8 @@
 {% block main %}
 
 <div class="container-fluid landing-hero">
+    <h1 class="team-name">{{ title }}</h1>    
+    <img class="owl-logo" alt="Owl" src="/static/img/owl.png">
     <div id="profile-pictures" class="container profile-pictures">
         <div class="row">
             {% for name in names %}
@@ -14,8 +16,6 @@
             {% endfor %}
         </div>
     </div>
-    <h1 class="team-name">{{ title }}</h1>    
-    <img class="owl-logo" alt="Owl" src="/static/img/owl.png">
 </div>
 
 {% endblock %}
