@@ -112,6 +112,18 @@
         "duration": "Sep 2022 - Dec 2022",
         "company": "MLH Fellowship",
         "descriptions": "Learned about SRE technologies including Python and Flask."
+      },
+      {
+        "title": "Software Engineering Intern",
+        "duration": "Dec 2021 - July 2022",
+        "company": "Flickr",
+        "descriptions": "I Updated all license types throughout the website to be current with the CC 4.0 Licensing types. I Created a new feature allowing users to see the license history for all 112 million+ photos on Flickr.I Researched and applied a CoC for Flickr’s open source repositories. I Wrote a post for the Flickr Blog on the new open source CoC. I Coordinated with both front and backend teams in order to ship the best possible product for the Flickr Commons."
+      },
+      {
+        "title": "Software Engineer in Training",
+        "duration": "Jun 2021 - Dec 2021",
+        "company": "Techtonica",
+        "descriptions": "I Learned new technologies under a deadline and developed 5 full-stack applications in various languages. I Set up multiple backend services using SQL, PostGres, and Docker using synthetic data for users to access in order to utilize frontend services. I Deployed multiple front-end applications using React+Express+Bootstrap and Vanilla JS+HTML+CSS utilizing API calls. I Led morning stand up meetings and closing wrap up meetings of 13+ engineers and facilitated daily agenda items throughout the workday. I Assisted teammates with debugging code & implementing new features."
       }
     ],
     "hobbies": [
@@ -126,6 +138,11 @@
         "school": "The University of Chicago",
         "qualification": "MA Social Sciences",
         "duration": "2016-2017"
+      },
+      {
+        "school": "The University of California, Santa Cruz",
+        "qualification": "BA Sociology and Feminist Studies",
+        "duration": "2012-2014"
       }
     ],
     "countries": [
