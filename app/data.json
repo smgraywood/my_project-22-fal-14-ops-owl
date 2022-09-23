@@ -81,6 +81,29 @@
     ]
   },
   {
-    "name": "Sarah"
+    "name": "Sarah",
+    "aboutMe": "Hello! I'm Sarah! I'm a former veteran teacher, a career changer, and a Latina in tech. I have a passion for front end development, UI/UX design, and accessibility.",
+    "experiences": [
+      {
+        "title": "Site Reliability Engineering Fellow",
+        "duration": "Sep 2022 - Dec 2022",
+        "company": "MLH Fellowship",
+        "descriptions": "Learned about SRE technologies including..."
+      }
+    ],
+    "hobbies": [
+      {
+        "name": "gardening",
+        "description": "I care for over 100 cacti and succulents!"
+      }
+    ],
+    "education": [
+      {
+        "school": "The University of Chicago",
+        "qualification": "MA Social Sciences",
+        "duration": "2016-2017"
+      }
+    ],
+    "countries": ["United States", "United Kingdom", "Mexico"]
   }
 ]
