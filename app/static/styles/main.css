@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
 .container-fluid {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -31,3 +34,16 @@
     padding: 20px;
 }
 
+.text-white{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.team-name{
+    color: #fff;
+    font-family: 'Bungee', cursive;
+    font-size: 50px;
+}
+
+.owl-logo{
+    width: 500px;
+}

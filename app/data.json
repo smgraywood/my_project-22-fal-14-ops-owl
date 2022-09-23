@@ -1,6 +1,8 @@
 [
   {
     "name": "Bosco",
+    "linked_in": "https://www.linkedin.com/in/boscochw/",
+    "github": "https://github.com/BoscoCHW/",
     "aboutMe": "Hello! I am Bosco, an aspiring, self-motivated software engineer who has a strong interest in building scalable software that has positive impact on society and the environment.",
     "experiences": [
       {
@@ -105,6 +107,8 @@
   },
   {
     "name": "Sarah",
+    "linked_in": "https://www.linkedin.com/in/smgraywood/",
+    "github": "https://github.com/smgraywood/",
     "aboutMe": "Hello! I'm Sarah! I'm a former veteran teacher, a career changer, and a Latina in tech. I have a passion for front end development, UI/UX design, and accessibility.",
     "experiences": [
       {
