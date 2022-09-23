@@ -9,6 +9,8 @@
     </a>
   </div>
   <h1 class="text-center text-white">{{ portfolio_data.name }}</h1>
+  <a  href="{{portfolio_data.linked_in}}" target="_blank"><img class="social-logo" alt="LinkedIn" src="/static/img/linkedin_logo.png"></a>
+  <a  href="{{portfolio_data.github}}" target="_blank"><img class="social-logo" alt="Github" src="/static/img/github.png"></a>
 </div>
 
 <div class="profile-wrapper container-xxl m-2">
@@ -39,15 +41,6 @@
           </div>
         </div>
       </div>
-
-      <!-- projects -->
-      <div class="card projects m-2 mb-4">
-        <div class="card-body">
-          <h4 class="card-title">Projects</h4>
-          <p class="card-text">{{ portfolio_data.aboutMe }}</p>
-        </div>
-      </div>
-
     </div>
     <div class="col">
 
@@ -72,9 +65,9 @@
 
           <div class="hobby-items-wrapper">
             {% for hobby in portfolio_data.hobbies %}
-            <div class="hobby-item d-flex">
+            <div class="hobby-item d-flex flex-column">
               <div class="hobby-img">
-                <img style="width: 5rem" src="{{ hobby.img }}" alt="{{ hobby.name }}" >
+                <img src="{{ hobby.img }}" alt="{{ hobby.name }}" >
               </div>
               <div class="hobby-info">
                 <div class="hobby-name">
@@ -85,6 +78,7 @@
                 </div>
               </div>
             </div>
+            <hr/>
             {% endfor %}
           </div>
 

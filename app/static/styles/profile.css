@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
 .profile-hero {
   background-color: #1d539f;
   text-align: center;
@@ -6,10 +9,39 @@
 
 .profile-picture img {
   border-radius: 50% !important;
-  max-width: 30%;     
+  width: max(30%, 20rem);     
   padding: 20px;
+}
+.social-logo{
+  width:45px;
+  color: #fff;
+  margin: 10px;
 }
 
 #map {
   height: 25rem;
+}
+
+.card-title{
+  font-family: 'Bungee', cursive;
+}
+
+
+.hobby-img{
+  margin-right: 5px;
+  margin-top: 5px;
+  width: 100%;
+}
+.hobby-img img {
+  border-radius: 2rem;
+  width: min(80%, 20rem);
+  margin-bottom: 1rem;
+}
+
+.hobby-name{
+  font-weight: bold;
+}
+
+hr:last-child {
+  display: none;
 }
