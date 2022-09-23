@@ -9,7 +9,7 @@
 
 .profile-picture img {
   border-radius: 50% !important;
-  max-width: 30%;     
+  width: max(30%, 20rem);     
   padding: 20px;
 }
 .social-logo{
