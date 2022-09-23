@@ -13,3 +13,13 @@
 #map {
   height: 25rem;
 }
+
+.hobby-img{
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.hobby-name{
+  font-weight: bold;
+
+}
