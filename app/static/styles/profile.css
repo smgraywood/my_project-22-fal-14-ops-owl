@@ -9,3 +9,7 @@
   max-width: 30%;     
   padding: 20px;
 }
+
+#map {
+  height: 25rem;
+}
