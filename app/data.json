@@ -111,13 +111,14 @@
         "title": "Site Reliability Engineering Fellow",
         "duration": "Sep 2022 - Dec 2022",
         "company": "MLH Fellowship",
-        "descriptions": "Learned about SRE technologies including..."
+        "descriptions": "Learned about SRE technologies including Python and Flask."
       }
     ],
     "hobbies": [
       {
         "name": "gardening",
-        "description": "I care for over 100 cacti and succulents!"
+        "description": "I care for over 100 cacti and succulents!",
+        "img": "/static/img/sarah/gardening.jpg"
       }
     ],
     "educations": [
