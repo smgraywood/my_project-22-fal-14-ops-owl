@@ -23,10 +23,62 @@
         "duration": "2021-2023"
       }
     ],
-    "countries": ["Hong Kong", "Canada", "United States", "Australia", "Taiwan", "Singapore", "Malaysia", "Vietnam", "Cambodia", "Thailand", "China", "Japan", "Korea"]
-  },
-  {
-    "name": "James"
+    "countries": [
+      {
+        "name": "Hong Kong",
+        "lat": 22.396428,
+        "long": 114.109497
+      },
+      {
+        "name": "Canada",
+        "lat": 56.130367,
+        "long": -106.346771
+      },
+      {
+        "name": "United States",
+        "lat": 37.09024,
+        "long": -95.712891
+      },
+      {
+        "name": "Australia",
+        "lat": -25.274398,
+        "long": 133.775136
+      },
+      {
+        "name": "Taiwan",
+        "lat": 23.69781,
+        "long": 120.960515
+      },
+      {
+        "name": "Singapore",
+        "lat": 1.352083,
+        "long": 103.819836
+      },
+      {
+        "name": "Malaysia",
+        "lat": 4.210484,
+        "long": 101.975766
+      },
+      {
+        "name": "Vietnam",
+        "lat": 14.058324,
+        "long": 108.277199
+      },
+      { "name": "Cambodia", "lat": 12.565679, "long": 104.990963 },
+      { "name": "Thailand", "lat": 15.870032, "long": 100.992541 },
+      { "name": "China", "lat": 35.86166, "long": 104.195397 },
+      { "name": "Japan", "lat": 36.204824, "long": 138.252924 },
+      { "name": "South Korea", "lat": 35.907757, "long": 127.766922 },
+      { "name": "The Philippines", "lat": 12.879721, "long": 121.774017 },
+      { "name": "Austria", "lat": 47.516231, "long": 14.550072 },
+      { "name": "Germany", "lat": 51.165691, "long": 10.451526 },
+      { "name": "Luxembourg", "lat": 49.815273, "long": 6.129583 },
+      { "name": "Czech Republic", "lat": 49.817492, "long": 15.472962 },
+      { "name": "Italy", "lat": 41.87194, "long": 12.56738 },
+      { "name": "Hungary", "lat": 47.162494, "long": 19.503304 },
+      { "name": "Greece", "lat": 39.074208, "long": 21.824312 },
+      { "name": "Slovenia", "lat": 46.151241, "long": 14.995463 }
+    ]
   },
   {
     "name": "Sarah"

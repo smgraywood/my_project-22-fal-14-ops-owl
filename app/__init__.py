@@ -22,6 +22,10 @@ def portfolio(name):
         if person["name"].lower() == name.lower():
             portfolio_data = person
 
+    if not portfolio_data:
+        names = map(lambda x: x["name"].lower(), data)
+        return render_template('index.html', title="The Ops Owls", url=os.getenv("URL"), names=names)
+
     return render_template("profile.html", portfolio_data=portfolio_data)
 
 
