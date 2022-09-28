@@ -4,23 +4,32 @@ body {
     background-image: url("/static/img/cacti_background.jpeg");
     background-repeat:no-repeat;
     background-size:cover;
-    background-color: #FEDA05;
+    background-color: #fff;
     min-height: 100vh;
     margin-bottom: 0px;
+    opacity: 1;
+}
+
+.background-image{
+    opacity: .85;
 }
 
 html{
     scroll-behavior: smooth;
 }
+
 .container-fluid {
     padding-left: 0 !important;
     padding-right: 0 !important;
+    opacity: 1;
 }
+
 
 .landing-hero {
     text-align: center;
     min-height: calc(100vh - 60px);
     padding-top: 100px;
+    opacity: 1;
 } 
 
 .profile-pictures img {
@@ -28,6 +37,8 @@ html{
     width: 350px;
     height: 350px;
     padding: 20px;
+    border: #fff;
+    border-style: double;
 }
 
 .greeting{

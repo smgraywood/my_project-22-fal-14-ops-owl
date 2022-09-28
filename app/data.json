@@ -3,7 +3,7 @@
     "name": "Sarah",
     "linked_in": "https://www.linkedin.com/in/smgraywood/",
     "github": "https://github.com/smgraywood/",
-    "aboutMe": "Hello! I'm Sarah! I'm a former veteran teacher, a career changer, and a Latina in tech. I have a passion for front end development, UI/UX design, and accessibility.",
+    "aboutMe": "veteran teacher | career changer | Latina in tech | passionate about front end development, UI/UX design, and accessibility.",
     "experiences": [
       {
         "title": "Site Reliability Engineering Fellow",
@@ -27,8 +27,13 @@
     "hobbies": [
       {
         "name": "gardening",
-        "description": "I care for over 100 cacti and succulents!",
+        "description": "I have over 100 cacti and succulents.",
         "img": "/static/img/sarah/gardening.jpg"
+      },
+      {
+        "name": "art",
+        "description": "I love drawing and painting.",
+        "img": "/static/img/sarah/art.jpg"
       }
     ],
     "educations": [
