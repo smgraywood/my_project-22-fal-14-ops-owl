@@ -1,9 +1,10 @@
 [
   {
     "name": "Sarah",
+    "last_name": "Graywood",
     "linked_in": "https://www.linkedin.com/in/smgraywood/",
     "github": "https://github.com/smgraywood/",
-    "aboutMe": "veteran teacher | career changer | Latina in tech | passionate about front end development, UI/UX design, and accessibility.",
+    "aboutMe": "Veteran teacher | Career changer | Latina in tech | Passionate about front end development, UI/UX design, and accessibility.",
     "experiences": [
       {
         "title": "Site Reliability Engineering Fellow",
