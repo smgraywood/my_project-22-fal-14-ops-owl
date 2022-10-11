@@ -4,7 +4,7 @@ tmux kill-server
 
 tmux new-session -d -s project_session
 
-cd my_project-22-fal-14-ops-owls
+cd ./app
 
 git fetch && git reset origin/main --hard
 
@@ -14,4 +14,4 @@ pip install -r requirements.txt
 
 export FLASK_RUN_HOST=0.0.0.0
 
-echo "Hello World"
+flask run --host=FLASK_RUN_HOST
