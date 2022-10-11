@@ -4,12 +4,14 @@ tmux kill-server
 
 tmux new-session -d -s project_session
 
-tmux send 'cd my_project-22-fal-14-ops-owls' ENTER;
+cd my_project-22-fal-14-ops-owls
 
-tmux send 'git fetch && git reset origin/main --hard' ENTER;
+git fetch && git reset origin/main --hard
 
-tmux send 'source python3-virtualenv/bin/activate' ENTER;
+source python3-virtualenv/bin/activate
 
-tmux send 'pip install -r requirements.txt' ENTER;
+pip install -r requirements.txt
 
-tmux send 'export FLASK_RUN_HOST=0.0.0.0' ENTER;
+export FLASK_RUN_HOST=0.0.0.0
+
+echo "Hello World"
