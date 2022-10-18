@@ -4,7 +4,7 @@
 <div class="parallax" style="height: 100%; overflow:scroll;padding:50px 50px 50px 50px;letter-spacing: 1px;">
     <div className="form-wrapper">
         <br />
-        <form className="form" action="/api/timeline_post" method="POST">
+        <form className="form" id="form" action="/api/timeline_post" method="POST">
             <h3 id="form-title">Add a Timeline Post!</h3>
             <label aria-label="your name"> Name:
                 <input type="text" name="name" placeholder="John Doe" />
@@ -21,7 +21,7 @@
             </label>
             <br />
             <br />
-            <button aria-label="button to submit form" id="form-submit">
+            <button aria-label="button to submit form" id="form-submit" type="submit">
                 SUBMIT
             </button>
         </form>
@@ -29,7 +29,7 @@
 
     <div>
         <h1 style="font-size:40px">All Timeline Posts</h1>
-        {% for post in posts %} 
+        {% for post in timeline_posts %} 
             <div class="post">
                 <p>ID: {{post["id"]}}</p>
                 <p>Name: {{post["name"]}}</p>
@@ -41,22 +41,26 @@
     </div>
 </div>
 
-
 <script>
-    const form = document.getElementById('form');        
-    form.addEventListener('submit', function(e) {
+    const form = document.getElementById("form");        
+    form.addEventListener("submit", function(e) {
         // Prevent default behavior:
         e.preventDefault();
         // Create payload as new FormData object:
         const payload = new FormData(form);
         // Post the payload using Fetch:
-        fetch('/api/timeline_post', {
+        fetch('http://localhost:5000/api/timeline_post', {
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            },    
         method: 'POST',
         body: payload,
         })
-        .then(res => res.json())
-        .then(data => console.log(data))
+        .then((res) => res.json())
+        .then((data) => console.log(data))
         .finally(() => location.reload())
+        .catch ((err) => console.log("I'm the error", err))
     })
 </script>    
 

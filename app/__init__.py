@@ -6,16 +6,24 @@ import json
 import datetime
 import re
 from playhouse.shortcuts import model_to_dict
+import re
 
 load_dotenv()
 app = Flask(__name__)
 
-if os.getenv("TESTING") == "true":
-    print("Running in test mode")
-    mydb =SqliteDatabase('file:memory?mode=memory&cache=shared',
-uri=True)
-else:
-    mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"),
+# if os.getenv("TESTING") == "true":
+#     print("Running in test mode")
+#     mydb =SqliteDatabase('file:memory?mode=memory&cache=shared',
+# uri=True)
+# else:
+#     mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"),
+#     user=os.getenv("MYSQL_USER"),
+#     password=os.getenv("MYSQL_PASSWORD"),
+#     host=os.getenv("MYSQL_HOST"),
+#     port=3306
+# )
+
+mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"),
     user=os.getenv("MYSQL_USER"),
     password=os.getenv("MYSQL_PASSWORD"),
     host=os.getenv("MYSQL_HOST"),
@@ -39,6 +47,13 @@ mydb.create_tables([TimelinePost])
 
 print(mydb)
 
+# @app.route('/api/timeline_post', methods=['POST'])
+# def post_time_line_post():
+#     name = request.form['name']
+#     email = request.form['email']
+#     content = request.form['content']
+#     timeline_post = TimelinePost.create(name=name, email=email,content=content)
+#     return model_to_dict(timeline_post)
 
 @app.route('/api/timeline_post', methods=['POST'])
 def post_time_line_post():
@@ -104,7 +119,9 @@ def portfolio(name):
 
 @app.route('/timeline')
 def timeline():
-    return render_template('timeline.html', title="Timeline")
+    timeline_posts = [model_to_dict(p) for p in TimelinePost.select().order_by(TimelinePost.
+    created_at.desc())]
+    return render_template('timeline.html', title="MLH Fellow - Timeline", url=os.getenv("URL"), timeline_posts=timeline_posts)
 
 def getData():
     SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
