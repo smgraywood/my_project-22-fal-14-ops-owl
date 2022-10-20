@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/my_project-22-fal-14-ops-owl
+cd ~/my_project-22-fal-14-ops-owl/app
 
 git fetch && git reset origin/main --hard
 
