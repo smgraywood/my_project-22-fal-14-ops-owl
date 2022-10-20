@@ -50,10 +50,6 @@
         const payload = new FormData(form);
         // Post the payload using Fetch:
         fetch('/api/timeline_post', {
-        // headers: {
-        //     'Accept': 'application/json',
-        //     'Content-Type': 'application/json',
-        //     },    
         method: 'POST',
         body: payload,
         })
