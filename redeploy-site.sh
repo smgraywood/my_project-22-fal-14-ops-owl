@@ -3,8 +3,6 @@ cd ~/my_project-22-fal-14-ops-owl/app
 
 git fetch && git reset origin/main --hard
 
-source python3-virtualenv/bin/activate
+docker compose -f docker-compose.prod.yml down
 
-pip install -r requirements.txt
-
-systemctl restart myportfolio
+docker compose -f docker-compose.prod.yml up -d --build
