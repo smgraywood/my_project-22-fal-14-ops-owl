@@ -45,26 +45,55 @@ mydb.create_tables([TimelinePost])
 
 print(mydb)
 
-
-
 @app.route('/api/timeline_post', methods=['POST'])
 def post_time_line_post():
-    # name =request.form['name']
-    # email= request.form['email']
-    # content=request.form['content']
-    name = request.form.get('name')
-    email = request.form.get('email', '')
-    content = request.form.get('content')
-    print(email)
-    print(name)
-    print(content)
-    if not all([name, re.match(r"^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$", email), content]):
-        return jsonify("Invalid input"), 400
+    try:
+        name = request.form['name']
+    except Exception as e:
+        return "Invalid name", 400
+    else:
+        if name == '':
+            return "Invalid name", 400
+    
+    try:
+        email = request.form['email']
+    except Exception as e:
+        return "Invalid email", 400
+    else:
+        if email == '':
+            return "Invalid email", 400
 
-# r"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
+    try:
+        content = request.form['content']
+    except Exception as e:
+        return "Invalid content", 400
+    else:
+        if content == '':
+            return "Invalid content", 400
 
+    if not re.match(r"^[A-Za-z0-9\.\+_-]+@[A-Za-z0-9\._-]+\.[a-zA-Z]*$", email):
+        return "Invalid email", 400
+    
     timeline_post = TimelinePost.create(name=name, email=email, content=content)
     return model_to_dict(timeline_post)
+
+
+# @app.route('/api/timeline_post', methods=['POST'])
+# def post_time_line_post():
+#     # name =request.form['name']
+#     # email= request.form['email']
+#     # content=request.form['content']
+#     name = request.form.get('name')
+#     email = request.form.get('email', '')
+#     content = request.form.get('content')
+#     print(email)
+#     print(name)
+#     print(content)
+#     if not all([name, re.match(r"^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$", email), content]):
+#         return jsonify("Invalid input"), 400
+
+    # timeline_post = TimelinePost.create(name=name, email=email, content=content)
+    # return model_to_dict(timeline_post)
 
 @app.route("/api/timeline_post", methods=['GET'])
 def get_time_line_post():
